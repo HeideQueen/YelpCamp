@@ -21,8 +21,8 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
-    
-mongoose.connect("mongodb+srv://HeideQueen:iq6364bGNHQDrhsx@cluster0-ftlwk.mongodb.net/yelp-camp?retryWrites=true&w=majority");
+
+mongoose.connect(process.env.DATABASE_URL);
 
 app.use(flash());
 
