@@ -22,7 +22,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
     
-mongoose.connect("mongodb://localhost/yelp-camp");
+mongoose.connect("mongodb+srv://HeideQueen:iq6364bGNHQDrhsx@cluster0-ftlwk.mongodb.net/yelp_camp?retryWrites=true&w=majority");
 
 app.use(flash());
 
